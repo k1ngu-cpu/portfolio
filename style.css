@@ -162,6 +162,13 @@ li {
     font-size: 18px;
     font-weight: 400;
     color: var(--text);
+    cursor: pointer;
+    border: 2px solid var(--primary);
+}
+
+.btn-red:hover {
+    background-color: transparent;
+    border: 2px solid var(--text);
 }
 
 .btn-sec {
@@ -169,6 +176,13 @@ li {
     font-size: 18px;
     font-weight: 400;
     color: var(--text);
+    cursor: pointer;
+    border: 2px solid var(--primary);
+}
+
+.btn-sec:hover {
+    border: 2px solid var(--primary);
+    background-color: transparent;
 }
 
 .design-lay {
@@ -179,6 +193,7 @@ li {
 
 .design-lay {
     animation: des-lay 1.5s ease 0s 1 normal none;
+    z-index: -200;
 }
 
 @keyframes des-lay {
