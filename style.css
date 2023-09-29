@@ -148,7 +148,7 @@ li {
     padding-right: 39.5px;
     height: 55px;
     border-radius: 12px;
-    border: none;
+    transition: 0.1s ease-in;
 }
 
 .header-btn {
@@ -176,13 +176,13 @@ li {
     font-size: 18px;
     font-weight: 400;
     color: var(--text);
-    cursor: pointer;
-    border: 2px solid var(--primary);
+    cursor: pointer;    
+    border: 2px solid var(--secondary);
 }
 
 .btn-sec:hover {
-    border: 2px solid var(--primary);
     background-color: transparent;
+    border: 2px solid var(--primary);
 }
 
 .design-lay {
