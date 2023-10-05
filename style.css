@@ -5,8 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    max-width: 1920px;
-    max-height: 1090px;
 }
 
 :root {
@@ -20,6 +18,8 @@
 body {
     background-color: var(--background);
     overflow: hidden;
+    width: 1920px;
+    height: 1080px;
 }
 
 .nav-bar {
@@ -43,7 +43,7 @@ body {
 	}
 }
 
-.nav-bar img {
+.king-logo {
     width: 76px;
     height: 40px;
 }
@@ -81,6 +81,10 @@ li {
 
 .nav-right a:hover:after {
     width: 100%;
+}
+
+.nav-right img {
+    display: none;
 }
 
 .header {
@@ -211,4 +215,82 @@ li {
 .design-lay img {
     width: 1712px;
     height: 1090px;
+}
+
+.burger {
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        width: 100%;
+    }
+
+    .king-logo {
+        width: 41px;
+        height: 21px;
+    }
+
+    .design-lay {
+        display: none;
+    }
+
+    .nav-bar {
+        margin-top: 36px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .nav-right img {
+        display: flex;
+    }
+
+    .nav-right ul {
+        display: none;
+    }
+
+    .burger {
+        width: 17px;
+        height: 12px;
+    }
+
+    .header {
+        display: block;
+        grid: none;
+        gap: 44px;
+        grid-auto-flow: none;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .big-text {
+        color: var(--text);
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 42px;
+        text-align: center;
+        padding-bottom: 31px;
+    }
+
+    .des-text span {
+        display: block;
+        color: var(--text);
+        line-height: 16px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .header-btn {
+        justify-content: center;
+    }
+
+    .header-btn .btn-sec, .btn-red {
+        padding-left: 29.28px;
+        padding-right: 29.28px;
+        height: 42.99px;
+        border-radius: 12px;
+        transition: 0.1s ease-in;
+    }
 }
