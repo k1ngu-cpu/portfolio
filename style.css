@@ -293,4 +293,14 @@ li {
         border-radius: 12px;
         transition: 0.1s ease-in;
     }
+
+    .btn-red {
+        font-size: 13.34px;
+        border: 1px solid var(--primary);
+    }
+
+    .btn-sec {
+        font-size: 13.34px;
+        border: 1px solid var(--secondary);
+    }
 }
