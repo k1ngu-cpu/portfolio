@@ -256,9 +256,9 @@ li {
     }
 
     .header {
-        display: block;
+        gap: 0;
+        display: absolute;
         grid: none;
-        gap: 44px;
         grid-auto-flow: none;
         justify-items: center;
         align-items: center;
@@ -271,7 +271,7 @@ li {
         font-weight: 500;
         line-height: 42px;
         text-align: center;
-        padding-bottom: 31px;
+        padding-bottom: 15px;
     }
 
     .des-text span {
@@ -299,8 +299,18 @@ li {
         border: 1px solid var(--primary);
     }
 
+    .btn-red:hover {
+        background-color: transparent;
+        border: 1px solid var(--text);
+    }
+
     .btn-sec {
         font-size: 13.34px;
         border: 1px solid var(--secondary);
+    }
+
+    .btn-sec:hover {
+        background-color: transparent;
+        border: 1px solid var(--primary);
     }
 }
