@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-bar">
+            <!-- <div class="center">
+                <input type="text" id="searchBar" placeholder='Try "Air Jordan 1"'>
+                <button onclick="search()"><i class='bx bx-search bx-sm'></i>
+            </div> -->
+            <div class="left-side">Verite</div>
+            <div class="right-side">
+                <i class='bx bx-shopping-bag bx-sm'></i>
+
+                <div class="user-divider"></div>
+
+                <div class="user-icon" onclick="toggleMenu()">
+                    <img src="assets/User-icon.png">
+                </div>
+
+                <div class="user-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="assets/User-icon.png">
+                            <h3>k1ngu</h3>
+                        </div>
+                        <hr>
+
+                        <a href="#" class="sub-menu-list bx-md">
+                            <i class='bx bx-cart'></i>
+                            <p>My Orders</p>
+                        </a>
+                        <a href="#" class="sub-menu-list bx-md">
+                            <i class='bx bx-user'></i>
+                            <p>My Profile</p>
+                        </a>
+                        <a href="#" class="sub-menu-list bx-md">
+                            <i class='bx bx-cog'></i>
+                            <p>Settings</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+
+    <div class="hero-sec">
+        <div class="content">
+            <p class="first1">JORDANS COLLECTION</p>
+            <h2 class="second2">AIR JORDAN</h2>
+            <h1 class="third3">SHATTERED</h1>
+            <button onclick="scrollToSection()" class="hero-btn">Shop Footwear</button>
+        </div>
+        <img src="assets/Group 1.png" class="hero-img">
+        <div class="hero-back">
+            <img src="assets/hero-back.svg" class="hero-img2">
+        </div>
+    </div>
+
+    <!-- <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="image"
+            src="https://images.unsplash.com/photo-1552066344-2464c1135c32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            draggable="false" />
+        <img class="image"
+            src="https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            draggable="false" />
+        <img class="image"
+            src="https://images.unsplash.com/photo-1631642777454-b43dc9fc2ffa?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            draggable="false" />
+        <img class="image"
+            src="https://images.unsplash.com/photo-1631642751439-b3e28f3638e7?q=80&w=1832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            draggable="false" />
+        <img class="image"
+            src="https://images.unsplash.com/photo-1552863671-2ba11c619f4c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            draggable="false" />
+        <img class="image"
+            src="https://images.unsplash.com/photo-1630314515116-0095524092b3?q=80&w=1958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            draggable="false" />
+        <img class="image"
+            src="https://images.unsplash.com/photo-1669205073423-5da5a5280572?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            draggable="false" />
+        <img class="image"
+            src="https://images.unsplash.com/photo-1686931463322-916e93213d86?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            draggable="false" />
+    </div> -->
+
+
+
+    <div class="main-content" id="section2">
+        <div class="top-bracket">
+            <div class="price">
+                <button>Price <i class='bx bx-chevron-down'></i></button>
+            </div>
+            <button>Review <i class='bx bx-chevron-down'></i></button>
+            <button>Color <i class='bx bx-chevron-down'></i></button>
+            <button>All Filters <i class='bx bx-filter'></i></button>
+            <button>Sort by <i class='bx bx-chevron-down'></i></button>
+        </div>
+
+
+        <div class="item-breaker">
+            <span>Shoes For You!</span>
+        </div>
+
+        <section class="item-layout">
+            <div class="items-box">
+                <div class="heart-circle"></div>
+                <div class="img-container">
+                    <img src="assets/item1.png">
+                    <div class="card-content"></div>
+                </div>
+
+                <div class="main-text">
+                    <h3>Shattered Backboard</h3>
+                    <h3>$260<sup>.00</sup></h3>
+                </div>
+
+                <div class="sub-text">
+                    <p>Air Jordan 1 High</p>
+                </div>
+
+                <div class="item-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i><span>(200)</span>
+                </div>
+
+                <button class="item-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+            <div class="items-box">
+                <div class="heart-circle"></div>
+                <div class="img-container">
+                    <img src="assets/item2.png">
+                </div>
+
+                <div class="main-text">
+                    <h3>Chicago Black/Red OG</h3>
+                    <h3>$260<sup>.00</sup></h3>
+                </div>
+
+                <div class="sub-text">
+                    <p>Air Jordan 1 High</p>
+                </div>
+
+                <div class="item-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i><span>(200)</span>
+                </div>
+
+                <button class="item-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+            <div class="items-box">
+                <div class="heart-circle"></div>
+                <div class="img-container">
+                    <img src="assets/item3.png">
+                </div>
+
+                <div class="main-text">
+                    <h3>New Love 2017</h3>
+                    <h3>$260<sup>.00</sup></h3>
+                </div>
+
+                <div class="sub-text">
+                    <p>Air Jordan 1 High</p>
+                </div>
+
+                <div class="item-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i><span>(200)</span>
+                </div>
+
+                <button class="item-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+            <div class="items-box">
+                <div class="heart-circle"></div>
+                <div class="img-container">
+                    <img src="assets/item4.png">
+                </div>
+
+                <div class="main-text">
+                    <h3>Obsidian / UNC OG</h3>
+                    <h3>$260<sup>.00</sup></h3>
+                </div>
+
+                <div class="sub-text">
+                    <p>Air Jordan 1 High</p>
+                </div>
+
+                <div class="item-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i><span>(200)</span>
+                </div>
+
+                <button class="item-btn">
+                    Add to Cart
+                </button>
+
+
+            </div>
+            <div class="items-box">
+                <div class="heart-circle"></div>
+                <div class="img-container">
+                    <img src="assets/item5.png">
+                </div>
+
+                <div class="main-text">
+                    <h3>University Blue</h3>
+                    <h3>$260<sup>.00</sup></h3>
+                </div>
+
+                <div class="sub-text">
+                    <p>Air Jordan 1 High</p>
+                </div>
+
+                <div class="item-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i><span>(200)</span>
+                </div>
+
+                <button class="item-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+            <div class="items-box">
+                <div class="heart-circle"></div>
+                <div class="img-container">
+                    <img src="assets/item6.png">
+                </div>
+
+                <div class="main-text">
+                    <h3>Retro High Dior</h3>
+                    <h3>$260<sup>.00</sup></h3>
+                </div>
+
+                <div class="sub-text">
+                    <p>Air Jordan 1 High</p>
+                </div>
+
+                <div class="item-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i><span>(200)</span>
+                </div>
+
+                <button class="item-btn">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="items-box">
+                <div class="heart-circle"></div>
+                <div class="img-container">
+                    <img src="assets/item7.png">
+                </div>
+
+                <div class="main-text">
+                    <h3>Retro High Fearless</h3>
+                    <h3>$260<sup>.00</sup></h3>
+                </div>
+
+                <div class="sub-text">
+                    <p>Air Jordan 1 High</p>
+                </div>
+
+                <div class="item-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i><span>(200)</span>
+                </div>
+
+                <button class="item-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+            <div class="items-box">
+                <div class="heart-circle"></div>
+                <div class="img-container">
+                    <img src="assets/item8.png">
+                </div>
+
+                <div class="main-text">
+                    <h3>Pine Green Black</h3>
+                    <h3>$260<sup>.00</sup></h3>
+                </div>
+
+                <div class="sub-text">
+                    <p>Air Jordan 1 High</p>
+                </div>
+
+                <div class="item-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i><span>(200)</span>
+                </div>
+
+                <button class="item-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+            <div class="items-box">
+                <div class="heart-circle"></div>
+                <div class="img-container">
+                    <img src="assets/item9.png">
+                </div>
+
+                <div class="main-text">
+                    <h3>Retro High Bloodline</h3>
+                    <h3>$260<sup>.00</sup></h3>
+                </div>
+
+                <div class="sub-text">
+                    <p>Air Jordan 1 High</p>
+                </div>
+
+                <div class="item-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i><span>(200)</span>
+                </div>
+
+                <button class="item-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 700,
+            delay: 200
+        });
+
+        ScrollReveal().reveal('.hero-btn', { delay: 600, origin: 'left', reset: false });
+        ScrollReveal().reveal('.items-box', { delay: 500, reset: false });
+        ScrollReveal().reveal('.top-bracket', { delay: 300, reset: false });
+        ScrollReveal().reveal('.item-breaker', { delay: 300 , reset: false});
+        ScrollReveal().reveal('.first1', { delay: 300, origin: 'left', reset: false });
+        ScrollReveal().reveal('.second2', { delay: 400, origin: 'left', reset: false});
+        ScrollReveal().reveal('.third3', { delay: 500, origin: 'left', reset: false });
+        ScrollReveal().reveal('.hero-img', { delay: 600, origin: 'right', reset: false});
+        ScrollReveal().reveal('#image-track', { delay: 600, origin: 'right', reset: false});
+    </script>
+</body>
+
+</html>
